@@ -1,7 +1,7 @@
 [
   {
     "name": "xpto1",
-    "repo": "https://github.com/apocas/script-d",
+    "repo": "https://github.com/apocas/nano",
     "tag": "1.0",
     "host": "code.dei.estt.ipt.pt",
     "port": "22",
@@ -9,7 +9,8 @@
     "folder": "/root/establish1",
     "env": {
       "JOHN": "DOE"
-    }
+    },
+    "run": "false"
   },
   {
     "name": "xpto2",
