@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 require('colors');
 
+var d = require('domain').create();
+
 var instructions = require('./lib/instructions');
 var argv = require('minimist')(process.argv.slice(2));
 
@@ -18,10 +20,17 @@ if(argv._.length == 2) {
   process.exit(1);
 }
 
-switch(command) {
-  case 'deploy':
-    instructions.deploy(file, key);
-    break;
-  default:
-    console.log('Unknown command.');
-}
+d.on('error', function(error) {
+  console.log('%s'.red, error);
+  process.exit(1);
+});
+
+d.run(function() {
+  switch(command) {
+    case 'deploy':
+      instructions.deploy(file, key);
+      break;
+    default:
+      console.log('Unknown command.');
+  }
+});
