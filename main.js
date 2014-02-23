@@ -10,15 +10,6 @@ var command = 'deploy';
 var file;
 var key = argv.key || process.env['HOME'] + '/.ssh/id_rsa';
 
-if(argv._.length == 2) {
-  command = argv._[0];
-  file = argv._[1];
-} else if(argv._.length == 1) {
-  file = argv._[0];
-} else {
-  console.log('Humm... weird parameters.'.red);
-  process.exit(1);
-}
 
 d.on('error', function(error) {
   console.log('%s'.red, error);
@@ -26,6 +17,15 @@ d.on('error', function(error) {
 });
 
 d.run(function() {
+  if(argv._.length == 2) {
+    command = argv._[0];
+    file = argv._[1];
+  } else if(argv._.length == 1) {
+    file = argv._[0];
+  } else {
+    throw new Error('Humm... weird parameters.');
+  }
+
   switch(command) {
     case 'deploy':
       instructions.deploy(file, key);
