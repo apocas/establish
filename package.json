@@ -1,0 +1,16 @@
+{
+    "name"        : "establish"
+  , "version"     : "0.0.1"
+  , "homepage"    : "http://abru.pt"
+  , "description" : "Establish, a stupid simple git based deployment tool."
+  , "author": "Pedro Dias <petermdias@gmail.com>"
+  , "main"    : "./main.js"
+  , "bin": {
+    "establish": "./main.js"
+  }
+  , "dependencies": {
+    "minimist": "*",
+    "colors": "*",
+    "ssh2": "*"
+  }
+}
