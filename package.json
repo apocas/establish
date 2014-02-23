@@ -11,6 +11,9 @@
   , "dependencies": {
     "minimist": "*",
     "colors": "*",
-    "ssh2": "*"
+    "ssh2": "*",
+    "read": "*",
+    "async": "*",
+    "debug": "*"
   }
 }
