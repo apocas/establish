@@ -6,7 +6,10 @@
     "host": "code.dei.estt.ipt.pt",
     "port": "22",
     "user": "root",
-    "folder": "/root/establish1"
+    "folder": "/root/establish1",
+    "env": {
+      "JOHN": "DOE"
+    }
   },
   {
     "name": "xpto2",
