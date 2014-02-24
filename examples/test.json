@@ -1,7 +1,7 @@
 [
   {
     "name": "xpto1",
-    "tag": "1.0",
+    "tag": "4.1.5",
     "repo": "https://github.com/apocas/nano",    
     "host": "code.dei.estt.ipt.pt",
     "port": "22",
@@ -10,24 +10,25 @@
     "env": {
       "JOHN": "DOE"
     },
-    "run": "false"
+    "run": "false",
+    "npmscript": "forever"
   },
   {
-    "name": "xpto1",
-    "folder": "/",
+    "name": "xpto2",
+    "folder": "/Users/pedrodias/Dropbox/Work/Github/establish",
     "host": "code.dei.estt.ipt.pt",
     "port": "22",
     "user": "root",
-    "destination": "/root/establish1",
+    "destination": "/root/establish2",
     "env": {
       "JOHN": "DOE"
     }
   },
   {
-    "name": "xpto2",
+    "name": "xpto3",
     "tag": "2.0",
     "repo": "https://github.com/apocas/script-d",
     "host": "code.dei.estt.ipt.pt",
-    "destination": "/root/establish2"
+    "destination": "/root/establish3"
   }
 ]
