@@ -9,6 +9,7 @@ var argv = require('minimist')(process.argv.slice(2));
 var command = 'deploy';
 var file;
 var key = argv.key || process.env['HOME'] + '/.ssh/id_rsa';
+var project = argv.project;
 
 
 d.on('error', function(error) {
@@ -28,7 +29,7 @@ d.run(function() {
 
   switch(command) {
     case 'deploy':
-      instructions.deploy(file, key);
+      instructions.deploy(file, project, key);
       break;
     default:
       console.log('Unknown command.');
