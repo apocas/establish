@@ -31,6 +31,12 @@ d.run(function() {
     case 'deploy':
       instructions.deploy(file, project, key);
       break;
+    case 'restart':
+      instructions.restart(file, project, key);
+      break;
+    case 'stop':
+      instructions.stop(file, project, key);
+      break;
     default:
       console.log('Unknown command.');
   }

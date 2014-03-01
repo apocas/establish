@@ -11,7 +11,7 @@
       "JOHN": "DOE"
     },
     "run": "false",
-    "npmscript": "forever"
+    "runscript": "forever"
   },
   {
     "name": "xpto2",
