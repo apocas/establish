@@ -1,6 +1,6 @@
 {
     "name"        : "establish"
-  , "version"     : "0.0.4"
+  , "version"     : "0.0.5"
   , "homepage"    : "http://github.com/apocas"
   , "description" : "Establish, a nodejs stupid simple git and ssh based deployment tool."
   , "author": "Pedro Dias <petermdias@gmail.com>"

@@ -37,6 +37,9 @@ d.run(function() {
     case 'stop':
       instructions.stop(file, project, key);
       break;
+    case 'start':
+      instructions.start(file, project, key);
+      break;
     default:
       throw new Error('Unknown command.');
   }
