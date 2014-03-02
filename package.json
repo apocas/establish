@@ -1,8 +1,8 @@
 {
     "name"        : "establish"
-  , "version"     : "0.0.1"
-  , "homepage"    : "http://abru.pt"
-  , "description" : "Establish, a stupid simple git based deployment tool."
+  , "version"     : "0.0.3"
+  , "homepage"    : "http://github.com/apocas"
+  , "description" : "Establish, a nodejs stupid simple git and ssh based deployment tool."
   , "author": "Pedro Dias <petermdias@gmail.com>"
   , "main"    : "./main.js"
   , "bin": {

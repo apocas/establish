@@ -38,6 +38,6 @@ d.run(function() {
       instructions.stop(file, project, key);
       break;
     default:
-      console.log('Unknown command.');
+      throw new Error('Unknown command.');
   }
 });
