@@ -10,11 +10,11 @@ Establish, a nodejs stupid simple git and ssh based deployment tool.
 
 ## Usage
 
- * establish deploy file.json
+ `establish deploy file.json`
 
 ### Getting started
 
-To use `dockerode` first you need to instantiate it:
+* file.json example:
 
 ``` json
 [
